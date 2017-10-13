@@ -202,8 +202,6 @@ namespace Cosmos.IL2CPU {
             ILOp.mPlugManager = mPlugManager;
 
             // Pull in extra implementations, GC etc.
-            Queue(RuntimeEngineRefs.InitializeApplicationRef, null, "Explicit Entry");
-            Queue(RuntimeEngineRefs.FinalizeApplicationRef, null, "Explicit Entry");
             Queue(VTablesImplRefs.SetMethodInfoRef, null, "Explicit Entry");
             Queue(VTablesImplRefs.IsInstanceRef, null, "Explicit Entry");
             Queue(VTablesImplRefs.SetTypeInfoRef, null, "Explicit Entry");
@@ -265,8 +263,6 @@ namespace Cosmos.IL2CPU {
             ILOp.mPlugManager = mPlugManager;
 
             // Pull in extra implementations, GC etc.
-            Queue(RuntimeEngineRefs.InitializeApplicationRef, null, "Explicit Entry");
-            Queue(RuntimeEngineRefs.FinalizeApplicationRef, null, "Explicit Entry");
             Queue(VTablesImplRefs.SetMethodInfoRef, null, "Explicit Entry");
             Queue(VTablesImplRefs.IsInstanceRef, null, "Explicit Entry");
             Queue(VTablesImplRefs.SetTypeInfoRef, null, "Explicit Entry");
